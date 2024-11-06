@@ -1,0 +1,22 @@
+<!-- polls/templates/base.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}  <!-- This line loads the static files tag -->
+    <title>My Django App</title>
+
+    <!-- Link to local Bootstrap CSS -->
+    <link href="{% static 'assets/vendor/bootstrap-poll/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+
+    <!-- Link to local Bootstrap JS -->
+    <script src="{% static 'assets/vendor/bootstrap-poll/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
